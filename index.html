@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/assets/img/favicon-32x32.png">  
+
+    <title>Practicas de examen->To-Do's</title>
+</head>
+
+<main class="container border border-5 border-primary rounded Regular shadow p-4 w-80 
+mx-auto">
+<div class="d-flex flex-column w-100 align-items-center pb-4">
+<img id="photo" class="logo" src="./src/assets/img/img-logo.jpg" alt="Logo-Fisio-training">
+</div>
+<h1 class="title text-center text-secondary">Rutinas de entrenamientos</h1>
+
+    <form class="main-form d-flex flex-column align-items-center gap-5"> 
+        
+        <input
+        class="form-control w-50 mt-4"
+        type="text"
+        placeholder="Introducir reto..."
+        id="taskInput"
+        >
+        
+        <div class="form-intensity d-flex">
+            <select class="form-select" name="intensity" id="intensity">
+                <option value="Súper">Súper</option>
+                <option value="Medio">Medio</option>
+                <option value="Bajo">Bajo</option>
+            
+            </select>
+            <label class="form-select-label-intensity text-white p-3">Intensidad</label>
+        </div>
+
+        <div class="form-frequency d-flex">
+            <select class="form-select" name="frequency" id="frequency">
+                <option value="Diaria">Diaria</option>
+                <option value="Semanal">Semanal</option>
+                <option value="Mensual">Mensual</option>
+            
+            </select>
+            <label class="form-select-label-frequency text-white p-3">Frecuencia</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" id="completed" type="checkbox">
+            <label class="form-check-label text-white" for="completed">Reto conseguido</label>
+        </div>
+
+        <button class="btn btn-warning" name="activity-btn">Guardar</button>
+         
+    </form>
+    <section class="tasks-section mt-5 border border-2 border-primary rounded p-3 w-73 
+    mx-auto text-primary " >
+        <h2 class=" text-white text-center">Mis retos</h2>
+       
+            <!-- <h3 class="task d-flex fs-5 mt-3 gap-4">Mountain climbers 
+                 <span class="bg-green text-white">Súper</span> 
+                 <i class="bi bi-hand-thumbs-down-fill"></i>
+                 <i id="trash" class="bi bi-trash text-warning ms-auto"></i> 
+             </h3>  -->
+            
+             <!-- <h3 class="task d-flex fs-5 mt-3 gap-4">Run (5.000 mtr)<i class="bi bi-hand-thumbs-up-fill"></i>
+                <i id="trash" class="bi bi-trash text-warning ms-auto"></i></h3>
+                
+                <h3 class="task d-flex fs-5 mt-3 gap-4">Burpee <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i id="trash" class="bi bi-trash text-warning ms-auto"></i></h3>   -->
+
+    </section>
+</main>
+
+
+<body>
+
+   
+   <script src="./src/main.js" type="module"></script> 
+</body>
+</html>
